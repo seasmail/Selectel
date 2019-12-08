@@ -1,0 +1,10 @@
+@import "../../../styles.scss";
+
+.sort {
+  cursor: pointer;
+  margin-bottom: 15px;
+  font-size: 20px;
+  &:hover {
+    color: $hover-color;
+  }
+}

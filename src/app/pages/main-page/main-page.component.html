@@ -1,0 +1,16 @@
+<div class="wrap">
+  <div class="search-area flex flex_center flex_column">
+    <form class="search-area__form form flex flex_center flex_column"
+          [formGroup]="cityForm" (ngSubmit)="onSubmit()">
+      <label class="form__label" for="city">Город</label>
+      <input class="form__input" id="city" type="text" formControlName="city" placeholder="Введите город">
+    </form>
+    <button class="button" type="submit" (click)="onSubmit()">Поиск</button>
+  </div>
+  <div class="main-area">
+    <app-weather-list [list]="weatherList" *ngIf="!isError && weatherList"></app-weather-list>
+    <app-alarm-message *ngIf="isError"></app-alarm-message>
+  </div>
+</div>
+
+

@@ -1,0 +1,31 @@
+@import "../../../styles.scss";
+
+.card {
+  background: $text-light-color;
+  color: $background-dark-color;
+  padding: 20px;
+  &__title {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  &__description {
+    margin-bottom: 5px;
+    font-size: 18px;
+    text-transform: lowercase;
+  }
+  &__time-content {
+    margin-bottom: 10px;
+  }
+}
+.minor {
+  font-size: 10px;
+}
+.temperature {
+  font-size: 15px;
+  color: $background-color;
+}
+.time {
+  margin-right: 20px;
+}

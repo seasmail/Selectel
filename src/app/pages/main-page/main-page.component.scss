@@ -1,0 +1,46 @@
+@import "../../../styles.scss";
+
+.wrap {
+  height: 100vh;
+}
+.search-area {
+  background: $background-color;
+  padding: 40px 0 0;
+}
+.form {
+  &__label {
+    font-size: 36px;
+    line-height: 56px;
+    text-transform: uppercase;
+    margin-right: 25px;
+  }
+  &__input {
+    border: none;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+}
+.main-area {
+  height: 100%;
+  background: $background-dark-color;
+  padding: 20px 30px 40px;
+}
+
+.button {
+  position: relative;
+  padding: 15px 40px;
+  background: $text-light-color;
+  color: $background-dark-color;
+  text-transform: lowercase;
+  border: 2px solid $background-color;
+  font-size: 16px;
+  font-weight: 600;
+  outline: none;
+  margin: 0 20px 30px;
+
+  &:hover {
+    background: $background-dark-color;
+    color: $text-light-color;
+  }
+}
+

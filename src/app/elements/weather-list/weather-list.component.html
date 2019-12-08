@@ -1,0 +1,9 @@
+<div class="sort" (click)="sortByColumn('temp')">Отсортировать по температуре (в течение дня)</div>
+
+<ul class="inline-flex">
+  <li *ngFor="let item of dates">
+    <app-weather-item [item]="groupedWeather[item]"></app-weather-item>
+  </li>
+</ul>
+
+
