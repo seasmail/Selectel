@@ -12,7 +12,6 @@ export class WeatherItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.item[0].getWeather()[0]);
   }
 
 }

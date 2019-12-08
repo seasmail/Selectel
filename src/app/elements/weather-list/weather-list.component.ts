@@ -31,7 +31,6 @@ export class WeatherListComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.list);
     this.groupByDays();
   }
 
@@ -42,8 +41,6 @@ export class WeatherListComponent implements OnInit {
       return date[0];
     });
     this.dates = _.keys(this.groupedWeather);
-    console.log(this.groupedWeather[this.dates[0]]);
-    console.log(this.dates);
   }
 
   public sortByColumn(column: string) {
